@@ -52,3 +52,8 @@ print('Accuracy: %0.4f.' % accuracy)
 # time used
 time_end=time.time()
 print('Time to classify: %0.2f minuites.' % ((time_end-time_start)/60))
+
+# # Output:
+# Accuracy = 93.99% (9399/10000) (classification)
+# Accuracy: 0.9399. 
+# Time to classify: 13.21 minuites.

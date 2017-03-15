@@ -7,15 +7,16 @@ https://www.tensorflow.org/get_started/mnist/beginners
 
 Data and softwares:
 The MNIST data (http://yann.lecun.com/exdb/mnist/)
-Python 3.5.2
-TensorFlow 1.0.1
+Python 3.5.2, https://www.continuum.io/downloads
+TensorFlow 1.0.1, https://www.tensorflow.org/
 Numpy 1.11.1
-LIBSVM 3.22
+LIBSVM 3.22, https://github.com/cjlin1/libsvm
+LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm (optional)
 
 Usage:
-Run classify_MNIST.py
-
-Note:
-Be sure to launch this script inside the libsvm-master/python directory.
+1) put the Python script under the libsvm-master/python directory
+  if you use LIBSVM 3.22, https://github.com/cjlin1/libsvm.
+2) install LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm (optional)
+Then run classify_MNIST.py.
 
 2017-3-15 09:36:34

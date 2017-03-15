@@ -14,9 +14,10 @@ LIBSVM 3.22, https://github.com/cjlin1/libsvm
 LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm (optional)
 
 Usage:
-1) put the Python script under the libsvm-master/python directory
+1) Put the Python script under the libsvm-master/python directory
   if you use LIBSVM 3.22, https://github.com/cjlin1/libsvm.
-2) install LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm (optional)
+2) Install LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm 
+  (optional). By this way, you could run "from svmutil import *" anywhere.
 Then run classify_MNIST.py.
 
 2017-3-15 09:36:34

@@ -1,23 +1,40 @@
-Classify the MNIST data by LIBSVM in Python.
-Copyright (C) 2017 Jing Wang
+# MNIST Classification Example — LIBSVM for Python
 
-The classification accuracy (93.99%) is terribly low compared to deep 
-learning methods. However, it is a start. 
-https://www.tensorflow.org/get_started/mnist/beginners
+Classify handwritten MNIST digits with the LIBSVM Python interface.
 
-Data and softwares:
-The MNIST data (http://yann.lecun.com/exdb/mnist/)
-Python 3.5.2, https://www.continuum.io/downloads
-TensorFlow 1.0.1, https://www.tensorflow.org/
-Numpy 1.11.1
-LIBSVM 3.22, https://github.com/cjlin1/libsvm
-LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm (optional)
+[GPL-3.0 license](LICENSE)
 
-Usage:
-1) Put the Python script under the libsvm-master/python directory
-  if you use LIBSVM 3.22, https://github.com/cjlin1/libsvm.
-2) Install LIBSVM 3.21, http://www.lfd.uci.edu/~gohlke/pythonlibs/#libsvm 
-  (optional). By this way, you could run "from svmutil import *" anywhere.
-Then run classify_MNIST.py.
+## Quick Start
 
-2017-3-15 09:36:34
+This historical script requires the legacy `tensorflow.examples.tutorials.mnist.input_data` module and an importable `svmutil` module.
+
+1. Prepare an environment compatible with the documented Python 3.5.2, TensorFlow 1.0.1, NumPy 1.11.1, and LIBSVM 3.22.
+2. Follow LIBSVM's Python setup instructions. The original example places `classify_MNIST.py` in `libsvm-master/python/` so `from svmutil import *` can resolve.
+3. In that configured directory, run:
+
+```bash
+python classify_MNIST.py
+```
+
+The script loads MNIST into `MNIST_data/`, combines training and validation samples, converts arrays to lists for LIBSVM, and trains and evaluates a linear SVM.
+
+## Reproducibility Notes
+
+The original notes also mention LIBSVM 3.21 as an alternative installation and report 93.99% accuracy. These are historical observations, not current installation or performance guarantees. Modernizing the environment requires checking both the TensorFlow loader and the LIBSVM import path.
+
+## Repository Structure
+
+- [classify_MNIST.py](classify_MNIST.py): dataset loading, LIBSVM training, and evaluation.
+- [LICENSE](LICENSE): existing license terms.
+- `MNIST_data/`: runtime data cache, not a tracked dataset.
+
+## Related Projects
+
+- [LIBSVM](https://github.com/cjlin1/libsvm): classifier and Python interface used by this example.
+
+## License
+
+See the existing [GNU General Public License, version 3](LICENSE). Retain the notices in the source files and in bundled third-party material.
+
+Copyright (C) 2017 Jing Wang.
+
